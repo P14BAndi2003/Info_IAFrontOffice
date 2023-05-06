@@ -129,7 +129,6 @@
 
    <script src="assets/js/jquery-2.1.3.min.js"></script>
    <script src="assets/js/plugins.js"></script>
-   <script src="assets/js/jquery.appear.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
 
