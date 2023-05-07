@@ -7,16 +7,13 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>{{ $article->titre }}</title>
+   <title>{{ $article->titre }}</title>
 	<meta name="description" content="{{ $article->description }}">  
 	<meta name="author" content="Andi Rakotonirina">
 
    <!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
- 	<!-- CSS
-   ================================================== -->
 
  	<!-- CSS
    ================================================== -->
@@ -47,74 +44,51 @@
    	<div class="row header-content">
 
    		<div class="logo">
-	         <a href="index.html">Author</a>
+	         <a href="{{route('articles.about')}}">Author</a>
 	      </div>
 
 	   	<nav id="main-nav-wrap">
-			
+				<ul class="main-navigation sf-menu">
+													
+				</ul>
 			</nav> <!-- end main-nav-wrap -->
 
 		
+   		
    	</div>     		
    	
    </header> <!-- end header -->
-   
 
-   <!-- content
+   <section id="page-header">
+   	<div class="row current-cat">
+   		<div class="col-full">
+   			<h1>Tous les derniers articles de l'IA sur IA_Info</h1>
+			   <h2>Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA</h2>
+   		</div>   		
+   	</div>
+   </section>
+   <!-- masonry
    ================================================== -->
-   <section id="content-wrap" class="blog-single">
-   	<div class="row">
-   		<div class="col-twelve">
-
-   			<article class="format-standard">  
-
-   				<div class="content-media">
-<center><div class="post-thumb">
-							<img src="data:image/png;base64,{{ $article->image }}"> 
-						</div>  </center>
-					</div>
-
-					<div class="primary-content">
-
-						<h1 class="page-title">{{ $article->titre }}</h1>	
-
-						<ul class="entry-meta">
-							<li class="date">{{ $article->datecreation->format('d/m/Y') }}</li>						
-							<li class="cat"><a href="">{{ $article->auteur->username }}</a></li>				
-						</ul>						
-
-						
-						<h3 class="lead">{{$article->description}}</h3>
-						{!!$article->contenu!!}
-						
-		  	
-					</div> <!-- end entry-primary -->		  			   
-
-	  			
-
-				</article>
-   		
-
-			</div> <!-- end col-twelve -->
-   	</div> <!-- end row -->
+   <section id="bricks">
 
 
 
-   </section> <!-- end content -->
 
+   </section> <!-- end bricks -->
 
+   
    <!-- footer
    ================================================== -->
    <footer>
 
-   	
+
       <div class="footer-bottom">
       	<div class="row">
 
       		<div class="col-twelve">
 	      		<div class="copyright">
 		         	<span>© Copyright 2023</span> 
-		         	<span>Design by <a href="">Someone</a></span>		         	
+		         	<span>Design by <a href="">IA_Info company</a></span>		         	
 		         </div>
 
 		         <div id="go-top">
@@ -127,9 +101,12 @@
 
    </footer>  
 
+   <!-- Java Script
+   ================================================== --> 
    <script src="assets/js/jquery-2.1.3.min.js"></script>
    <script src="assets/js/plugins.js"></script>
    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
