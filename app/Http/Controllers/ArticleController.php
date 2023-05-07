@@ -21,7 +21,7 @@ class ArticleController extends Controller
 // créer une collection avec les données
 $collection = new Collection($pagine);
 
-// définir le nombre d'éléments à afficher par page
+// définir le nombre d'éhyhyuléments à afficher par page
 $perPage = 8;
 
 // obtenir le numéro de la page à afficher à partir de la requête
