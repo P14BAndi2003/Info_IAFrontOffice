@@ -40,7 +40,7 @@
 							</div>						
 						</div>
 						<div class="col-md-9 col-sm-12">
-							<h1>Tous les derniers articles de l'IA sur IA_Info</h1>
+							<h1>Tous sur IA_Info</h1>
 							<p>Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA</p>						
 						</div>
 					
