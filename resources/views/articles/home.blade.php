@@ -127,6 +127,7 @@
                </div>
 
         		</article> <!-- end article -->
+
 				@endforeach
 
 
@@ -136,7 +137,13 @@
    	</div> <!-- end row -->
        <div class="row">
        <nav class="pagination">
-    {{ $pagines->links('vendor.pagination.semantic-ui', ['class' => 'page-numbers']) }}
+@if ($pagine->currentPage() > 1)
+    <a href="{{ $pagine->previousPageUrl() }}">Précédent</a>
+@endif
+
+@if ($pagine->hasMorePages())
+    <a href="{{ $pagine->nextPageUrl() }}">Suivant</a>
+@endif
     </nav>
 </div>
 
