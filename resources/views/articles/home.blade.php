@@ -33,7 +33,7 @@
 						<div class="col-md-3 col-sm-12">
 							<div class="brand">
 								<a href="index.html">
-									<img src="assets/favicon.ico" alt="Magz Logo">
+									<img src="assets/images/logo.png" alt="Magz Logo">
 								</a>
 							</div>						
 						</div>
