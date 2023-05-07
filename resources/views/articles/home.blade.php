@@ -50,7 +50,7 @@
 			<!-- End nav -->
 		</header>
 
-		<section class="home"  style="margin-top: 20%;">
+		<section class="home">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12" >
@@ -60,25 +60,26 @@
 							<div>Latest News</div>
 						</div>
 						<div class="row">
+						@foreach($pagines as $pagine)
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="row">
 									<article class="article col-md-12">
 										<div class="inner">
 											<figure>
-												<a href="single.html">
-													<img src="images/news/img10.jpg" alt="Sample Article">
+												<a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
+													<img src="data:image/png;base64,{{ $pagine->image }}" alt="Sample Article">
 												</a>
 											</figure>
 											<div class="padding">
 												<div class="detail">
-													<div class="time">December 10, 2016</div>
-													<div class="category"><a href="category.html">Healthy</a></div>
+													<div class="time">{{$pagine->datecreation->format('d/m/Y')}}</div>
+													<div class="category"><a href="category.html">{{$pagine->auteur->username}}</a></div>
 												</div>
-												<h2><a href="single.html">Duis aute irure dolor in reprehenderit in voluptate</a></h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+												<h2><a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">{{$pagine->titre}}</a></h2>
+												<p>{{$pagine->description}}	</p>
 												<footer>
-													<a href="#" class="love"><i class="ion-android-favorite-outline"></i> <div>1263</div></a>
-													<a class="btn btn-primary more" href="single.html">
+												
+													<a class="btn btn-primary more" href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
 														<div>More</div>
 														<div><i class="ion-ios-arrow-thin-right"></i></div>
 													</a>
@@ -91,7 +92,7 @@
 
 							
 							</div>
-							
+							@endforeach
 						
 					</div>
 						</div>
