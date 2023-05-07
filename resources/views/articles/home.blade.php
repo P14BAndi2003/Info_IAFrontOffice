@@ -35,7 +35,7 @@
 						<div class="col-md-3 col-sm-12">
 							<div class="brand">
 								<a href="index.html">
-									<img src="assets/images/logo.png" alt="Magz Logo"  width="100%" height="auto">
+									<img src="assets/images/logo.png" alt="Magz Logo"  width="80 px" height="50 px">
 								</a>
 							</div>						
 						</div>
