@@ -58,7 +58,7 @@
 			  <li class="active">{{ $article->datecreation->format('d/m/Y') }}</li>
 			  <li class="active">{{ $article->auteur->username }}</li>
 	          </ol>
-			  <img src="data:image/png;base64,{{ $article->image }}" alt="Photo indisponible">
+			  <img src="data:image/png;base64,{{ $article->image }}" alt="Photo indisponible" >
 						<h1 class="page-title">{{ $article->titre }}</h1>
 						<h2 class="page-subtitle">{{$article->description}}</h2>
 						<div class="line thin"></div>

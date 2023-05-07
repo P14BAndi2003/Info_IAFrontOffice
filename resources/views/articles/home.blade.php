@@ -10,21 +10,21 @@
 		<!-- Shareable -->
 		<title>Tous les derniers articles de l'IA sur IA_Info</title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="assets/scripts/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href={{asset("assets/scripts/bootstrap/bootstrap.min.css")}}>
 		<!-- IonIcons -->
-		<link rel="stylesheet" href="assets/scripts/ionicons/css/ionicons.min.css">
+		<link rel="stylesheet" href={{asset("assets/scripts/ionicons/css/ionicons.min.css")}}>
 		<!-- Toast -->
-		<link rel="stylesheet" href="assets/scripts/toast/jquery.toast.min.css">
+		<link rel="stylesheet" href={{asset("assets/scripts/toast/jquery.toast.min.css")}}>
 		<!-- OwlCarousel -->
-		<link rel="stylesheet" href="assets/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href={{asset("assets/scripts/owlcarousel/dist/assets/owl.carousel.min.css")}}>
+		<link rel="stylesheet" href={{asset("assets/scripts/owlcarousel/dist/assets/owl.theme.default.min.css")}}>
 		<!-- Magnific Popup -->
-		<link rel="stylesheet" href="assets/scripts/magnific-popup/dist/magnific-popup.css">
-		<link rel="stylesheet" href="assets/scripts/sweetalert/dist/sweetalert.css">
+		<link rel="stylesheet" href={{asset("assets/scripts/magnific-popup/dist/magnific-popup.css")}}>
+		<link rel="stylesheet" href={{asset("assets/scripts/sweetalert/dist/sweetalert.css")}} >
 		<!-- Custom style -->
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/skins/all.css">
-		<link rel="stylesheet" href="assets/css/demo.css">
+		<link rel="stylesheet" href={{asset("assets/css/style.css")}}>
+		<link rel="stylesheet" href={{asset("assets/css/skins/all.css")}}>
+		<link rel="stylesheet" href={{asset("assets/css/demo.css")}}>
 	</head>
 
 	<body class="skin-orange">
@@ -35,7 +35,7 @@
 						<div class="col-md-3 col-sm-12">
 							<div class="brand">
 								<a href="index.html">
-									<img src="assets/images/logo.png" alt="Magz Logo"  width="80" height="50">
+									<img src={{asset("assets/images/logo.png")}} alt="Magz Logo"  width="80" height="50">
 								</a>
 							</div>						
 						</div>
@@ -126,17 +126,17 @@
 		</footer>
 		<!-- End Footer -->
 
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/jquery.migrate.js"></script>
-		<script src="assets/scripts/bootstrap/bootstrap.min.js"></script>
-		<script src="assets/scripts/jquery-number/jquery.number.min.js"></script>
-		<script src="assets/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
-		<script src="assets/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-		<script src="assets/scripts/easescroll/jquery.easeScroll.js"></script>
-		<script src="assets/scripts/sweetalert/dist/sweetalert.min.js"></script>
-		<script src="assets/scripts/toast/jquery.toast.min.js"></script>
-		<script src="assets/js/demo.js"></script>
-		<script src="assets/js/e-magz.js"></script>
+		<script src={{asset("assets/js/jquery.js")}}></script>
+		<script src={{asset("assets/js/jquery.migrate.js")}}></script>
+		<script src={{asset("assets/scripts/bootstrap/bootstrap.min.js")}}></script>
+		<script src={{asset("assets/scripts/jquery-number/jquery.number.min.js")}}></script>
+		<script src={{asset("assets/scripts/owlcarousel/dist/owl.carousel.min.js")}}></script>
+		<script src={{asset("assets/scripts/magnific-popup/dist/jquery.magnific-popup.min.js")}}></script>
+		<script src={{asset("assets/scripts/easescroll/jquery.easeScroll.js")}}></script>
+		<script src={{asset("assets/scripts/sweetalert/dist/sweetalert.min.js")}}></script>
+		<script src={{asset("assets/scripts/toast/jquery.toast.min.js")}}></script>
+		<script src={{asset("assets/js/demo.js")}}></script>
+		<script src={{asset("assets/js/e-magz.js")}}></script>
 	</body>
 </html>
 
