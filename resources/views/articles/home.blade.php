@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+		<meta name="description" content="Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA">
 		<!-- Shareable -->
-		<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+		<title>Tous les derniers articles de l'IA sur IA_Info</title>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="assets/scripts/bootstrap/bootstrap.min.css">
 		<!-- IonIcons -->
@@ -63,14 +63,14 @@
 						@foreach($pagines as $pagine)
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="row">
-									<article class="article col-md-12">
+									<article class="article col-md-12" >
 										<div class="inner">
 											<figure>
 												<a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
 													<img src="data:image/png;base64,{{ $pagine->image }}" alt="Sample Article">
 												</a>
 											</figure>
-											<div class="padding">
+											<div class="padding" style="height: 350px;">
 												<div class="detail">
 													<div class="time">{{$pagine->datecreation->format('d/m/Y')}}</div>
 													<div class="category"><a href="category.html">{{$pagine->auteur->username}}</a></div>
@@ -108,9 +108,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copyright">
-							COPYRIGHT &copy; MAGZ 2017. ALL RIGHT RESERVED.
+							COPYRIGHT &copy; 2023. ALL RIGHT RESERVED.
 							<div>
-								Made with <i class="ion-heart"></i> by <a href="http://kodinger.com">Kodinger</a>
+								
 							</div>
 						</div>
 					</div>
