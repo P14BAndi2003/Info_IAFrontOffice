@@ -7,13 +7,16 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-   <title>{{ $article->titre }}</title>
+	<title>{{ $article->titre }}</title>
 	<meta name="description" content="{{ $article->description }}">  
 	<meta name="author" content="Andi Rakotonirina">
 
    <!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
 
  	<!-- CSS
    ================================================== -->
@@ -44,20 +47,18 @@
    	<div class="row header-content">
 
    		<div class="logo">
-	         <a href="{{route('articles.about')}}">Author</a>
+	         <a href="index.html">Author</a>
 	      </div>
 
 	   	<nav id="main-nav-wrap">
-				<ul class="main-navigation sf-menu">
-													
-				</ul>
+			
 			</nav> <!-- end main-nav-wrap -->
 
 		
-   		
    	</div>     		
    	
    </header> <!-- end header -->
+   
 
    <!-- content
    ================================================== -->
@@ -101,19 +102,19 @@
 
    </section> <!-- end content -->
 
-   
+
    <!-- footer
    ================================================== -->
    <footer>
 
-
+   	
       <div class="footer-bottom">
       	<div class="row">
 
       		<div class="col-twelve">
 	      		<div class="copyright">
 		         	<span>© Copyright 2023</span> 
-		         	<span>Design by <a href="">IA_Info company</a></span>		         	
+		         	<span>Design by <a href="">Someone</a></span>		         	
 		         </div>
 
 		         <div id="go-top">
@@ -126,12 +127,9 @@
 
    </footer>  
 
-   <!-- Java Script
-   ================================================== --> 
    <script src="assets/js/jquery-2.1.3.min.js"></script>
    <script src="assets/js/plugins.js"></script>
    <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
