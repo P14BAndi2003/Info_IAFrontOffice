@@ -35,7 +35,7 @@
 						<div class="col-md-3 col-sm-12">
 							<div class="brand">
 								<a href="index.html">
-									<img src="assets/images/logo.png" alt="Magz Logo">
+									<img src="assets/images/logo.png" alt="Magz Logo" width="auto">
 								</a>
 							</div>						
 						</div>
@@ -69,7 +69,7 @@
 										<div class="inner">
 											<figure>
 												<a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
-													<img src="data:image/png;base64,{{ $pagine->image }}" alt="Sample Article">
+													<img src="data:image/png;base64,{{ $pagine->image }}" alt="Sample Article" width="auto">
 												</a>
 											</figure>
 											<div class="padding" style="height: 350px;">
@@ -81,10 +81,10 @@
 												<p>{{$pagine->description}}	</p>
 												<footer>
 												
-													<a class="btn btn-primary more" href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
+											<!--	<a class="btn btn-primary more" href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
 														<div>More</div>
 														<div><i class="ion-ios-arrow-thin-right"></i></div>
-													</a>
+													</a> -->
 												</footer>
 											</div>
 										</div>
