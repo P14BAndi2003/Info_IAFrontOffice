@@ -15,7 +15,7 @@ class ArticleController extends Controller
         $articles = Article::where('statut', 1)->get();
         $pagine = Article::where('statut', 1)->orderBy('datecreation', 'desc')->get();
 
-        $data = Article::where('statut', 1)->orderBy('created_at', 'desc')->get();
+    
 
 // créer une collection avec les données
 $collection = new Collection($pagine);
