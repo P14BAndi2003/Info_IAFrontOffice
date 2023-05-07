@@ -30,7 +30,10 @@ class ArticleController extends Controller
 
     public function retail($id)
     {
-        $article = Article::find($id);
+   
+        $article = Cache::remember('article_' . $id, 60, function () use ($id) {
+            return Article::find($id);
+        });
     
         return view('articles.retail', compact('article'));
     }
