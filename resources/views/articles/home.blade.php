@@ -44,7 +44,7 @@
    	<div class="row header-content">
 
    		<div class="logo">
-	         <a href="{{route('articles.about')}}">Author</a>
+	         <a href="index.html">Author</a>
 	      </div>
 
 	   	<nav id="main-nav-wrap">
@@ -96,7 +96,7 @@
 												<li><a href="#" >{{ $article->auteur->username }}</a></li>				
 											</ul>	
 
-								   		<h1 class="slide-title"><a href="{{route('articles.about',['id' => $article->id, 'slug' => Str::slug($article->titre) ,'randch' => rand(10000, 99999)]) }}" title="">{{ $article->titre }}</a></h1> 
+								   		<h1 class="slide-title"><a href="{{route('articles.retail',['id' => $article->id, 'slug' => Str::slug($article->titre) ,'randch' => rand(10000, 99999)]) }}" title="">{{ $article->titre }}</a></h1> 
 								   	</div> 				   					  
 				   			
 				   				</div>
@@ -113,7 +113,7 @@
          	<article class="brick entry format-standard animate-this">
 
                <div class="entry-thumb">
-                  <a href="{{route('articles.about',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}" class="thumb-link">
+                  <a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}" class="thumb-link">
 	                  <img src="data:image/png;base64,{{ $pagine->image }}" alt="building">             
                   </a>
                </div>
@@ -129,7 +129,7 @@
                			</span>			
                		</div>
 
-               		<h1 class="entry-title"><a href="{{route('articles.about',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">{{$pagine->titre}}</a></h1>
+               		<h1 class="entry-title"><a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">{{$pagine->titre}}</a></h1>
                		
                	</div>
 						<div class="entry-excerpt">

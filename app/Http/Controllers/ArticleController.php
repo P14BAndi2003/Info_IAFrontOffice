@@ -21,13 +21,12 @@ class ArticleController extends Controller
     {
         $article = Article::find($id);
     
-        return view('articles.retail', compact('article'));
+        return view('articles.about', compact('article'));
     }
-    public function about($id)
+    public function about()
     {
 
-        $article = Article::find($id);
     
-        return view('articles.about', compact('article'));
+        return view('articles.about');
     }
 }
