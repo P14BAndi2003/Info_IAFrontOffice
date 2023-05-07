@@ -19,4 +19,3 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', \App\Http\Controllers\ArticleController::class . '@listes');
 Route::get('/retail/{id}-{slug?}-{randch?}', [\App\Http\Controllers\ArticleController::class, 'retail'])->name('articles.retail');
-Route::get('/about', [\App\Http\Controllers\ArticleController::class, 'about'])->name('articles.about');
