@@ -20,19 +20,19 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="assets/css/base.css">
-   <link rel="stylesheet" href="assets/css/vendor.css">  
-   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="{{asset('assets/css/base.css')}}">
+   <link rel="stylesheet" href="{{asset('assets/css/vendor.css')}}">  
+   <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
      
    <!-- script
    ================================================== -->
-	<script src="assets/js/modernizr.js"></script>
-	<script src="assets/js/pace.min.js"></script>
+	<script src="{{asset('assets/js/modernizr.js')}}"></script>
+	<script src="{{asset('assets/js/pace.min.js')}}"></script>
 
    <!-- favicons
 	================================================== -->
-	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="{{asset('assets/favicon.ico')}}" type="image/x-icon">
+	<link rel="icon" href="{{asset('assets/favicon.ico')}}" type="image/x-icon">
 
 </head>
 
@@ -127,9 +127,9 @@
 
    </footer>  
 
-   <script src="assets/js/jquery-2.1.3.min.js"></script>
-   <script src="assets/js/plugins.js"></script>
-   <script src="assets/js/main.js"></script>
+   <script src="{{asset('assets/js/jquery-2.1.3.min.js')}}"></script>
+   <script src="{{asset('assets/js/plugins.js')}}"></script>
+   <script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 </html>
