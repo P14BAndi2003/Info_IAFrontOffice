@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Cache-Control" content="max-age=2592000, public">
   <meta http-equiv="Expires" content="Sun, 06 Jun 2023 00:00:00 GMT">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 		<meta name="description" content="{{ $article->description }}">  
 		<!-- Shareable -->
 		<title>{{ $article->titre }}</title>
