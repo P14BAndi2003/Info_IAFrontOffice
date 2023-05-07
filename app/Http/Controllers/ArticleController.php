@@ -6,6 +6,7 @@ use App\Models\Auteur;
 use App\Models\Article;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class ArticleController extends Controller
 {
