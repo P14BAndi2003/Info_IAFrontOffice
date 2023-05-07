@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
+<meta charset="utf-8">
 	<title>Tous les derniers articles de l'IA sur IA_Info</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA">  
