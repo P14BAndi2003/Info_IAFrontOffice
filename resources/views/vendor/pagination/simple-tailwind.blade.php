@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+</head>
+
 @if ($paginator->hasPages())
     <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">
         {{-- Previous Page Link --}}

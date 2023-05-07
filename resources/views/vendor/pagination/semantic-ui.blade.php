@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+</head>
+
 @if ($paginator->hasPages())
     <div class="ui pagination menu" role="navigation">
         {{-- Previous Page Link --}}
