@@ -137,11 +137,11 @@
    	</div> <!-- end row -->
        <div class="row">
        <nav class="pagination">
-@if ($pagine->currentPage() > 1)
+@if ($pagines->currentPage() > 1)
     <a href="{{ $pagine->previousPageUrl() }}">Précédent</a>
 @endif
 
-@if ($pagine->hasMorePages())
+@if ($pagines->hasMorePages())
     <a href="{{ $pagine->nextPageUrl() }}">Suivant</a>
 @endif
     </nav>
