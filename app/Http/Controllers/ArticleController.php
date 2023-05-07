@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Models\Auteur;
 use App\Models\Article;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class ArticleController extends Controller
 {
@@ -12,7 +13,27 @@ class ArticleController extends Controller
     public function listes()
     {
         $articles = Article::where('statut', 1)->get();
-        $pagines = Article::where('statut', 1)->orderBy('datecreation', 'desc')->paginate(8);
+        $pagine = Article::where('statut', 1)->orderBy('datecreation', 'desc')->get();
+
+        $data = Article::where('statut', 1)->orderBy('created_at', 'desc')->get();
+
+// créer une collection avec les données
+$collection = new Collection($pagine);
+
+// définir le nombre d'éléments à afficher par page
+$perPage = 8;
+
+// obtenir le numéro de la page à afficher à partir de la requête
+$page = request()->query('page', 1);
+
+// créer une instance de LengthAwarePaginator
+$pagines = new LengthAwarePaginator(
+    $collection->forPage($page, $perPage),
+    $collection->count(),
+    $perPage,
+    $page,
+    ['path' => url()->current()]
+);
         
         return view('articles.home',compact('articles','pagines'));
     }
