@@ -26,7 +26,8 @@ class ArticleController extends Controller
     public function about()
     {
 
+        $article = Article::find($id);
     
-        return view('articles.about');
+        return view('articles.about', compact('article'));
     }
 }
