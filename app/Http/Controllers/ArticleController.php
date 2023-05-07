@@ -23,4 +23,10 @@ class ArticleController extends Controller
     
         return view('articles.retail', compact('article'));
     }
+    public function about()
+    {
+
+    
+        return view('articles.about');
+    }
 }
