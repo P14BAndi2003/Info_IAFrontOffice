@@ -69,7 +69,7 @@
 										<div class="inner">
 											<figure>
 												<a href="{{route('articles.retail',['id' => $pagine->id, 'slug' => Str::slug($pagine->titre) ,'randch' => rand(10000, 99999)]) }}">
-													<img src="data:image/png;base64,{{ $pagine->image }}" alt="Sample Article" width="80" height="90">
+													<img src="data:image/png;base64,{{ $pagine->image }}" alt="Sample Article" width="80" height="180">
 												</a>
 											</figure>
 											<div class="padding" style="height: 350px;">
