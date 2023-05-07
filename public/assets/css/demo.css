@@ -25,6 +25,7 @@
 }
 .demo-settings .demo-settings-toggle i {
   font-size: 24px;
+  font-display: swap;
 }
 .demo-settings .demo-settings-options {
   transition: all .5s;
