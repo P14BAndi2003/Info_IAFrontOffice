@@ -18,9 +18,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-
-
-    AddDefaultCharset UTF-8
-
-    RewriteRule ^retail/([0-9]+)/(.*)$ /retail/$1 [L,R=301]
 </IfModule>

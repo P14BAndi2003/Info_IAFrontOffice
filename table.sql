@@ -21,12 +21,12 @@ create table auteur(
 create table article(
     id serial primary key,
     idauteur int references auteur(id) not null,
-    titre varchar(50) not null,
+    titre text not null,
     image text default null,
     datecreation date default CURRENT_TIMESTAMP,
     contenu text default '',
     statut int default 0,
-    description varchar(200) not null
+    description text not null
 );
 
 insert into auteur(email,mdp,username) values ('andi@gmail.com','andi1234','Andi Rakotonirina');

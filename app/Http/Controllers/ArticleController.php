@@ -8,7 +8,10 @@ use Illuminate\Support\Facades\Hash;
 
 class ArticleController extends Controller
 {
-    //
+/**
+ * @middleware(response_cache)
+ */
+
     public function listes()
     {
         $articles = Article::where('statut', 1)->get();
