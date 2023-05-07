@@ -7,8 +7,8 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Tous les derniers articles de l'IA sur IA_Info</title>
-	<meta name="description" content="Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA">  
+   <title>{{ $article->titre }}</title>
+	<meta name="description" content="{{ $article->description }}">  
 	<meta name="author" content="Andi Rakotonirina">
 
    <!-- mobile specific metas
@@ -59,22 +59,47 @@
    	
    </header> <!-- end header -->
 
-   <section id="page-header">
-   	<div class="row current-cat">
-   		<div class="col-full">
-   			<h1>Tous les derniers articles de l'IA sur IA_Info</h1>
-			   <h2>Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA</h2>
-   		</div>   		
-   	</div>
-   </section>
-   <!-- masonry
+   <!-- content
    ================================================== -->
-   <section id="bricks">
+   <section id="content-wrap" class="blog-single">
+   	<div class="row">
+   		<div class="col-twelve">
+
+   			<article class="format-standard">  
+
+   				<div class="content-media">
+<center><div class="post-thumb">
+							<img src="data:image/png;base64,{{ $article->image }}"> 
+						</div>  </center>
+					</div>
+
+					<div class="primary-content">
+
+						<h1 class="page-title">{{ $article->titre }}</h1>	
+
+						<ul class="entry-meta">
+							<li class="date">{{ $article->datecreation->format('d/m/Y') }}</li>						
+							<li class="cat"><a href="">{{ $article->auteur->username }}</a></li>				
+						</ul>						
+
+						
+						<h3 class="lead">{{$article->description}}</h3>
+						{!!$article->contenu!!}
+						
+		  	
+					</div> <!-- end entry-primary -->		  			   
+
+	  			
+
+				</article>
+   		
+
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->
 
 
 
-
-   </section> <!-- end bricks -->
+   </section> <!-- end content -->
 
    
    <!-- footer
