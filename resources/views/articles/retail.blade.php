@@ -20,19 +20,19 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="http://infoiafrontoffice-production.up.railway.app/assets/css/base.css">
-   <link rel="stylesheet" href="http://infoiafrontoffice-production.up.railway.app/assets/css/vendor.css">  
-   <link rel="stylesheet" href="http://infoiafrontoffice-production.up.railway.app/assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/base.css">
+   <link rel="stylesheet" href="assets/css/vendor.css">  
+   <link rel="stylesheet" href="assets/css/main.css">
      
    <!-- script
    ================================================== -->
-	<script src="http://infoiafrontoffice-production.up.railway.app/assets/js/modernizr.js"></script>
-	<script src="http://infoiafrontoffice-production.up.railway.app/assets/js/pace.min.js"></script>
+	<script src="assets/js/modernizr.js"></script>
+	<script src="assets/js/pace.min.js"></script>
 
    <!-- favicons
 	================================================== -->
-	<link rel="shortcut icon" href="http://infoiafrontoffice-production.up.railway.app/assets/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="http://infoiafrontoffice-production.up.railway.app/assets/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -127,9 +127,9 @@
 
    </footer>  
 
-   <script src="http://infoiafrontoffice-production.up.railway.app/assets/js/jquery-2.1.3.min.js"></script>
-   <script src="http://infoiafrontoffice-production.up.railway.app/assets/js/plugins.js"></script>
-   <script src="http://infoiafrontoffice-production.up.railway.app/assets/js/main.js"></script>
+   <script src="assets/js/jquery-2.1.3.min.js"></script>
+   <script src="assets/js/plugins.js"></script>
+   <script src="assets/js/main.js"></script>
 </body>
 
 </html>
