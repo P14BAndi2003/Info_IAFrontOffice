@@ -23,7 +23,7 @@ class ArticleController extends Controller
     
         return view('articles.retail', compact('article'));
     }
-    public function about()
+    public function about($id)
     {
 
         $article = Article::find($id);
