@@ -99,6 +99,11 @@
 				</div>
 				</div>
 				</div>
+				<div class="pagination-container">
+      
+    {{ $pagines->links('vendor.pagination.default') }}
+  
+</div>
 		</section>
 
 		<!-- Start footer -->

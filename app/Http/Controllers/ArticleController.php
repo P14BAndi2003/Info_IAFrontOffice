@@ -12,7 +12,7 @@ class ArticleController extends Controller
     public function listes()
     {
         $articles = Article::where('statut', 1)->get();
-        $pagines = Article::where('statut', 1)->orderBy('datecreation', 'desc')->paginate(25);
+        $pagines = Article::where('statut', 1)->orderBy('datecreation', 'desc')->paginate(7);
         
         return view('articles.home',compact('articles','pagines'));
     }
